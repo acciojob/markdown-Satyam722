@@ -1,38 +1,27 @@
-{
-  "name": "markdown-editor",
-  "version": "1.0.0",
-  "description": "Markdown Editor Assignment",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --watch --open --hot",
-    "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^5.0.0",
-    "style-loader": "^2.0.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.editor-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.preview {
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
 }
