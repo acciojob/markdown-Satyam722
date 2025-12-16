@@ -5,23 +5,29 @@
 
 .editor-container {
   display: flex;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  height: 80vh;
   gap: 20px;
-  margin-top: 20px;
 }
 
-textarea {
+/* Changed from 'textarea' to '.textarea' to target the class */
+.textarea {
   width: 50%;
-  height: 300px;
   padding: 10px;
   font-size: 16px;
+  resize: none;
 }
 
 .preview {
   width: 50%;
-  height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
+  text-align: left;
   overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.loading {
+  font-size: 2rem;
+  margin-top: 50px;
 }
