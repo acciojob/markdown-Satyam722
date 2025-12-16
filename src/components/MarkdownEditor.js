@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import "../styles/App.css";
 
 const MarkdownEditor = () => {
   const [text, setText] = useState("");
 
   return (
-    <div className="app">
+    <div className="editor-container">
       <textarea
-        className="textarea"
+        className="textarea" // Required class name
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Enter markdown here..."
       />
 
-      <div className="preview">
+      <div className="preview"> 
+        {/* Required class name */}
         <ReactMarkdown>{text}</ReactMarkdown>
       </div>
     </div>
@@ -22,4 +22,3 @@ const MarkdownEditor = () => {
 };
 
 export default MarkdownEditor;
-
